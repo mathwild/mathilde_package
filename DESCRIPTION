@@ -1,11 +1,11 @@
 Package: mpackage
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Mathilde Package
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Mathilde Duverger
+Maintainer: <mathilde1231@hotmail.fr>
+Description: Homework for 16/10/2017.
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.0.1
