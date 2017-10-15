@@ -7,6 +7,8 @@
 #' @export
 #' @import ggplot2
 #' @import dplyr
+#' @import tidyr
+#' @import assertthat
 #'
 #' @examples
 #' \dontrun{
@@ -32,6 +34,8 @@ draw_a_name <- function(the_name,the_sex){
 #' @export
 #' @import ggplot2
 #' @import dplyr
+#' @import tidyr
+#' @import assertthat
 #'
 #' @examples
 #' \dontrun{

@@ -11,4 +11,6 @@ LazyData: true
 RoxygenNote: 6.0.1
 Imports: readxl,
     dplyr,
-    ggplot2
+    ggplot2,
+    assertthat,
+    tidyr
