@@ -4,7 +4,7 @@
 #' @param filename pre existing file
 #' @param row.names set as FALSE
 #'
-#' @return
+#' @return a path to file
 #' @export
 #' @import assertthat
 #' @importFrom utils write.csv2

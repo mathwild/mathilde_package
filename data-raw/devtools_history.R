@@ -5,5 +5,7 @@ devtools::use_package("dplyr")
 devtools::use_package("tidyr")
 devtools::use_package("ggplot2")
 devtools::use_package("assertthat")
+devtools::use_vignette("mypackage")
+devtools::build_vignettes()
 
 

@@ -1,0 +1,14 @@
+---
+title: "mpackage"
+author: "Mathilde Duverger"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{mpackage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+My package includes bla.
+
+

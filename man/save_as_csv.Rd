@@ -13,6 +13,9 @@ save_as_csv(dataset, filename, row.names = FALSE)
 
 \item{row.names}{set as FALSE}
 }
+\value{
+a path to file
+}
 \description{
 saves a file as csv
 }
