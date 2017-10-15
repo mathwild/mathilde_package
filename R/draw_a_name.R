@@ -14,6 +14,8 @@
 #' }
 
 draw_a_name <- function(the_name,the_sex){
+  assert_that(is.character(the_name))
+  assert_that(is.character(the_sex))
   mydata <- prenoms
   jdata <- mydata %>%
     filter(name == the_name, sex == the_sex) %>% group_by(year) %>%
@@ -37,6 +39,7 @@ draw_a_name <- function(the_name,the_sex){
 #' }
 
 draw_names <- function(the_names){
+  assert_that(is.character(the_names))
   mydata <- prenoms
   jdata <- mydata %>% filter(name %in% the_names) %>% group_by(name,year) %>%
     summarise(total=sum(n))
