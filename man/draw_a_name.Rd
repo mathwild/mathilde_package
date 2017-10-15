@@ -2,7 +2,7 @@
 % Please edit documentation in R/draw_a_name.R
 \name{draw_a_name}
 \alias{draw_a_name}
-\title{plot the number of people born throughout the years of certain sex and name}
+\title{view the evolution in time of the use of a name for a sex}
 \usage{
 draw_a_name(the_name, the_sex)
 }
@@ -15,7 +15,7 @@ draw_a_name(the_name, the_sex)
 a plot
 }
 \description{
-plot the number of people born throughout the years of certain sex and name
+view the evolution in time of the use of a name for a sex
 }
 \examples{
 \dontrun{
