@@ -18,8 +18,8 @@
 #' }
 
 draw_a_name <- function(the_name,the_sex){
-  assert_that(is.character(the_name))
-  assert_that(is.character(the_sex))
+  assert_that(is.character(the_name), msg = "The name needs to be a character")
+  assert_that(is.character(the_sex), msg = "The sex needs to be a character")
 
   data(prenoms)
   jdata <- prenoms %>%
@@ -48,7 +48,7 @@ draw_a_name <- function(the_name,the_sex){
 #' }
 
 draw_names <- function(the_names){
-  assert_that(is.character(the_names))
+  assert_that(is.character(the_names), msg = "The names needs to be a character and within a vector")
 
   data(prenoms)
   jdata <- prenoms %>% filter(name %in% the_names) %>% group_by(name,year) %>%

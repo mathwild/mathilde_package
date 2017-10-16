@@ -9,6 +9,6 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-My package includes bla.
+My package includes save_as_csv, multi_excel, csv_reader, draw_a_name and draw_names functions. I have included assert_that calls in the functions.
 
 
