@@ -5,6 +5,8 @@
 #'
 #' @return a plot
 #' @export
+#' @importFrom utils data
+#' @import prenoms
 #' @import ggplot2
 #' @import dplyr
 #' @import tidyr
@@ -19,8 +21,8 @@ draw_a_name <- function(the_name,the_sex){
   assert_that(is.character(the_name))
   assert_that(is.character(the_sex))
 
-  mydata <- prenoms
-  jdata <- mydata %>%
+  data(prenoms)
+  jdata <- prenoms %>%
     filter(name == the_name, sex == the_sex) %>% group_by(year) %>%
     summarise(total=sum(n))
 
@@ -33,6 +35,8 @@ draw_a_name <- function(the_name,the_sex){
 #'
 #' @return a plot
 #' @export
+#' @importFrom utils data
+#' @import prenoms
 #' @import ggplot2
 #' @import dplyr
 #' @import tidyr
@@ -46,8 +50,8 @@ draw_a_name <- function(the_name,the_sex){
 draw_names <- function(the_names){
   assert_that(is.character(the_names))
 
-  mydata <- prenoms
-  jdata <- mydata %>% filter(name %in% the_names) %>% group_by(name,year) %>%
+  data(prenoms)
+  jdata <- prenoms %>% filter(name %in% the_names) %>% group_by(name,year) %>%
     summarise(total=sum(n))
 
   ggplot(data=jdata, aes(x=year,y=total,color=name)) + geom_line()

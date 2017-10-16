@@ -13,7 +13,9 @@ Imports: readxl,
     dplyr,
     ggplot2,
     assertthat,
-    tidyr
+    tidyr,
+    prenoms
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
+Depends: R (>= 2.10)
